@@ -1,0 +1,73 @@
+﻿@model BaoCaoThucTap.ViewModels.SanPhamViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<center><h1>Thêm sản phẩm</h1></center>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="tensp" class="control-label"></label>
+                <input asp-for="tensp" class="form-control" />
+                <span asp-validation-for="tensp" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                    <label asp-for="ngaynhap" class="control-label"></label>
+                    <input asp-for="ngaynhap" class="form-control" />
+                    <span asp-validation-for="ngaynhap" class="text-danger"></span>
+                </div>*@
+            <div class="form-group">
+                @*<label asp-for="FileAnh" class="control-label"></label>
+                <div class="custom-file">
+                    <input asp-for="FileAnh" type="file" class="custom-file-input" id="customFile" onchange="show(this)" />
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                    <span asp-validation-for="FileAnh" class="text-danger"></span>
+                </div>*@
+
+                <label asp-for="FileAnh"></label>
+                    <input asp-for="FileAnh" onchange="show(this)" />
+                    <span asp-validation-formaction="FileAnh"></span>
+
+                <div id="dsAnh"></div>
+                <img id="usera_img" height="100" width="90" style="border:solid" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="giasp" class="control-label"></label>
+                <input asp-for="giasp" class="form-control" />
+                <span asp-validation-for="giasp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="motasp" class="control-label"></label>
+                <input asp-for="motasp" class="form-control" />
+                <span asp-validation-for="motasp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Trở lại danh sách</a>
+</div>
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+    function show(input) {
+        if (input.files && input.files[0]) {
+            var filerdr = new FileReader();
+            filerdr.onload = function (e) {
+                $('#usera_img').attr('src', e.target.result);
+            }
+            filerdr.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

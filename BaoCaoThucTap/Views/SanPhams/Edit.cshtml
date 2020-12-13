@@ -1,0 +1,55 @@
+﻿@model BaoCaoThucTap.ViewModels.SanPhamViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<center><h1>Sửa sản phẩm : @Model.masp </h1></center>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="masp" />
+            <div class="form-group">
+                <label asp-for="tensp" class="control-label"></label>
+                <input asp-for="tensp" class="form-control" />
+                <span asp-validation-for="tensp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ngaynhap" class="control-label"></label>
+                <input asp-for="ngaynhap" class="form-control" />
+                <span asp-validation-for="ngaynhap" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="productImage" class="control-label"></label>
+                <input asp-for="productImage" type="file" class="form-control" />
+                <span asp-validation-for="productImage" class="text-danger"></span>
+                <img src="~/images/@Model.urlImage" height="50" width="50"
+                     asp-append-version="true" />
+            </div>*@
+            <div class="form-group">
+                <label asp-for="giasp" class="control-label"></label>
+                <input asp-for="giasp" class="form-control" />
+                <span asp-validation-for="giasp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="motasp" class="control-label"></label>
+                <input asp-for="motasp" class="form-control" />
+                <span asp-validation-for="motasp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Trở lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
