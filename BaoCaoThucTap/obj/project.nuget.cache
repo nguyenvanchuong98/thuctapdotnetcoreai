@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y77kKN8anYTWyDgHWnwIULJOKU2U2m/WB/HzW3EW30ZRTTi81OL+2V5+3Rf36ZGRGVPy9ciuy85WUK0mgiizZA==",
+  "dgSpecHash": "x8SdDasqKsnXYjIBik9xOyD5UdlBkb9bvfDXlPd9sGjlJemoDq2Wg5xCjTmh9vR2i0qeT28ZUGN7cF24kP2o+w==",
   "success": true,
-  "projectFilePath": "E:\\AIVIETNAM\\Asp.net Core\\BaoCaoThucTap\\BaoCaoThucTap\\BaoCaoThucTap.csproj",
+  "projectFilePath": "E:\\GitHub\\thuctapdotnetcoreai\\BaoCaoThucTap\\BaoCaoThucTap.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\jquery\\3.5.1\\jquery.3.5.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\AIVIETNAM\\Asp.net Core\\BaoCaoThucTap\\BaoCaoThucTap\\BaoCaoThucTap.csproj": {}
+    "E:\\GitHub\\thuctapdotnetcoreai\\BaoCaoThucTap\\BaoCaoThucTap.csproj": {}
   },
   "projects": {
-    "E:\\AIVIETNAM\\Asp.net Core\\BaoCaoThucTap\\BaoCaoThucTap\\BaoCaoThucTap.csproj": {
+    "E:\\GitHub\\thuctapdotnetcoreai\\BaoCaoThucTap\\BaoCaoThucTap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AIVIETNAM\\Asp.net Core\\BaoCaoThucTap\\BaoCaoThucTap\\BaoCaoThucTap.csproj",
+        "projectUniqueName": "E:\\GitHub\\thuctapdotnetcoreai\\BaoCaoThucTap\\BaoCaoThucTap.csproj",
         "projectName": "BaoCaoThucTap",
-        "projectPath": "E:\\AIVIETNAM\\Asp.net Core\\BaoCaoThucTap\\BaoCaoThucTap\\BaoCaoThucTap.csproj",
+        "projectPath": "E:\\GitHub\\thuctapdotnetcoreai\\BaoCaoThucTap\\BaoCaoThucTap.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\AIVIETNAM\\Asp.net Core\\BaoCaoThucTap\\BaoCaoThucTap\\obj\\",
+        "outputPath": "E:\\GitHub\\thuctapdotnetcoreai\\BaoCaoThucTap\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
